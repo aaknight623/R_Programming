@@ -4,6 +4,7 @@ print(lakes)
 summary(lakes)
 predict(lakes)
 Winnipeg = c(Lake = "Winnipeg", Elevation = 217, Area = 24387)
+class(Winnipeg) = "Lakes"
 attributes(Winnipeg)
 Winnipeg
 setClass("Lakes2", slots=c(Lake = "character", Elevation = "numeric", Area = "numeric"))
