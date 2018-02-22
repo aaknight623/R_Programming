@@ -3,6 +3,10 @@ plot(lakes)
 print(lakes)
 summary(lakes)
 predict(lakes)
-class(lakes) = "Lakes"
-lakes
-lakes < setClass("Lakes", slots=c(Lakes="character", elevation="numeric", area="numeric"))
+Winnipeg = c(Lake = "Winnipeg", Elevation = 217, Area = 24387)
+attributes(Winnipeg)
+Winnipeg
+setClass("Lakes2", slots=c(Lake = "character", Elevation = "numeric", Area = "numeric"))
+Winnipeg2 = new("Lakes2", Lake = "Winnipeg", Elevation = 217, Area = 24387)
+attributes(Winnipeg2)
+isS4(Winnipeg2)
